@@ -168,7 +168,7 @@ transition: all 450ms;
 .form-data {
     display: flex;
     flex-direction: column;
-    border: red solid 2px;
+    /* border: red solid 2px; */
     /*max-width: 100%;  */
     /* margin: 0px 139px; */
     background: #ebebeb;
