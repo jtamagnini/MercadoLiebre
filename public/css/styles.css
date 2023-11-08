@@ -1,0 +1,393 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: 300; */
+}
+
+header {
+    /* font-family: 'Roboto', sans-serif; */
+    font-size:12px;     /*Tamaño de cuerpos de texto segun consigna*/
+    background-color:  #EAC926;
+    /* padding: 20px; */
+}
+
+.flex-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid 3px red; */
+    align-content: center;
+}
+
+.logo { 
+   max-width:50vw;
+   /*height:200px;*/
+   margin:10px; 
+}
+
+/*
+.input{
+    background-color: #FFF;
+    width: 50%;
+    margin-left: 5%;
+    margin-bottom: 2px;
+    
+    border-style: solid;
+    border-width: 1px;
+
+    color:black;
+}
+*/
+/*
+.lupa{
+    background-color: #FFF;
+    width:5%;
+    margin-left: 5%;
+    margin-top : 0px;
+    border-style: solid;
+    border-width: 1px;
+}
+*/
+
+.busqueda{
+    font-size: 34px;
+    margin: 0px;
+    padding: 0px;
+    min-width: 50%;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.burger-menu{       
+    display: block;
+    background-color: #03264C;
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    max-width:50px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    transition: 1000ms;  
+}
+
+.banner{
+    width: 100%;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.main {
+    width: 90%;         /* Consigna: Debemos centrar la sección main y que ocupe un 90% del ancho de la pantalla.*/
+    margin: auto;
+}
+
+main h3 {
+    font-size:24px;     /* Titulares: consigna : 24 px */
+    text-align: center;
+}
+
+.flex-articulos{     /* un contenedor flex */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+h4 {
+    font-size:16px; /* Descripciones: consigna : 16 px */
+    /* margin: 8px 0px; */ 
+}
+ 
+.articulo{
+    text-align: center;
+    /*border: solid;*/
+    /* box-shadow: 0px 0px 10px rgb(100 , 100 , 100 ); */
+    box-shadow:none;
+}
+
+.imagen-producto{
+    max-width: 200px;
+    margin: auto;
+}
+
+.producto{                  /* Consigna: ... caja dentro de la caja general */
+    /*display: block; */
+    text-align: left;
+    border-top: solid 1px #ebebeb; /* Consigna: borde superior de 1 píxel, línea sólida y color #ebebeb. */
+    padding: 15px;       /* Consigna: el contenido de sus bordes en 15 píxeles en cada uno de sus lados. */
+    margin-bottom: 10px; /* Consigna: Entre cada artículo hay una separación de 10 píxeles. */
+    position: relative;
+}
+
+.product-delivery-icon{
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+color: #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+transition: all 450ms;
+}
+
+.precio-producto{
+    display:flex;
+    align-items:center;
+}
+
+.precio {
+    font-size:18px;     /* precio: consigna : 18 px */
+    margin-right: 10px;
+    /* width: 30%; */
+    flex-basis: 30%;
+    text-align: left;  
+}
+
+.descuento {
+    font-size:16px; /* Descuentos: consigna : 16px */
+    color: #39b54a;
+    margin:0;
+    /* width: 70%; */
+    flex-basis: 70%;
+    text-align: left;
+}
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+    border: red solid 2px;
+    /*max-width: 100%;  */
+    /* margin: 0px 139px; */
+    background: #ebebeb;
+    padding: 0px 150px;
+}
+
+.form-data h5 {
+    padding: 10px 0px;
+}
+
+.perfilusuario-radio{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.check{
+    padding: 10px 0px;
+}
+
+.boton-form-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 20px;
+    /* color: blue;
+    background-color: white; */
+}
+
+.campo1{
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 5%;
+}
+
+/*
+.campo1:invalid {
+    background-color: #ffdddd;
+  }
+
+.campo1:valid {
+    background-color: #ddffdd;
+  }
+*/
+
+.label-error{
+    display: none;
+}
+
+:valid + .label-error {    
+    display:none;
+}
+:invalid + .label-error {
+    display:block;
+    color: red;
+}
+
+.campo1:invalid {
+    color:red;      
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    max-width: 100%;
+    margin:0px;
+    
+    background: #ebebeb;
+    /* margin: auto; */
+    align-items: stretch;    
+    padding: 20px 150px;
+}
+
+.boton-azul {
+    background-color: #1259c3;
+    color: white;
+    padding: 5px 10px;
+}
+.boton-azul:hover { /*Micro desafío - Organizando elementos - Paso 2 */
+    background-color:#0022AA;
+}
+footer section {
+    text-align: center; /* micro desafio -code review II */
+    font-size: 12px;
+    margin-left: 40px;
+    padding-right: 40px;
+}
+
+footer h2{
+    font-size:14px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+footer p {
+    margin-top: 2px;
+    font-size: 11px;
+}
+
+.icono-pie i{
+    width:40px;
+    /* height: 40px; */
+    font-size: 2em;  /* micro desafio -code review II */
+    margin-top:30px;
+    margin-bottom: 10px; /* micro desafio -code review II */
+    color:blue;
+}
+
+div.icono-pie i:hover{ /*Micro desafío - code review */
+    color:white;
+    background: blue;
+}
+
+.copyright{
+    text-align:left;
+    margin-left:0;
+    margin-top:30px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* border: solid 4px yellow; */
+}
+
+.nav1, .nav2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    /*max-width: 50%;*/
+  /*  border: solid 4px red; */
+}
+
+.nav-menu li{
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex-pie{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 361px){   /* Consigna: Navegación en tablets (ancho mínimo 361 px) */
+    h4 {
+        display:none;
+    }
+    .nav-menu{
+        display:none;
+    }
+    .articulo{
+        width:55%;      
+    }
+    .logo { 
+        width:50vw;
+    }
+}
+
+@media (min-width: 769px){  /* Consigna: Navegación en desktop (ancho mínimo 769 px) */
+    h4 {
+        display:block;
+    }
+    .nav-menu{
+        display:flex;
+    }   
+    .burger-menu{
+        display: none;
+    }
+    .articulo{
+        width: 40%;     
+    }
+    .logo { 
+        max-width:25vw;
+    }
+    .flex-pie{
+        flex-direction: row; /* Micro desafío - code review */
+    }
+}
+
+@media (min-width: 1200px){
+    h4 {
+        color:transparent;
+    }
+    h4:hover{
+        color:#000000;
+    }
+    .nav-menu{
+        display:flex;
+    }   
+    .burger-menu{
+        display: none;
+    }
+    .articulo{
+        width: 22%       
+    }
+    .articulo:hover{
+        box-shadow: 0px 0px 10px rgb(100 , 100 , 100 );
+    }
+    .articulo:hover h4{
+        color:#000000;
+    }
+    .product-delivery-icon:hover{
+        transform: rotateZ(-90deg);   
+    }
+}
